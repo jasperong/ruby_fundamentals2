@@ -7,3 +7,7 @@ def asterisk(g_list)
 end
 
 asterisk(grocery_list)
+
+grocery_list << "rice"
+
+asterisk(grocery_list)

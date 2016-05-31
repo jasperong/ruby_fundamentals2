@@ -21,3 +21,7 @@ else
 end
 
 puts grocery_list[1]
+
+grocery_sorted = grocery_list.sort
+
+asterisk(grocery_sorted)

@@ -25,7 +25,10 @@ def increased(hash)
 end
 
 increased(students)
+students2 = students.dup
+students2.delete_if {|k, v| k == :cohort2}
 
-students.delete_if {|k, v| k == :cohort2}
+list_students(students2)
 
-list_students(students)
+values = students.each_value.to_a
+puts values.inject(:+)

@@ -25,3 +25,8 @@ puts grocery_list[1]
 grocery_sorted = grocery_list.sort
 
 asterisk(grocery_sorted)
+
+puts "OMG there's no chicken!! Nooooooooo!!!"
+no_chicken = grocery_list - ["chicken"]
+
+asterisk(no_chicken)

@@ -25,6 +25,7 @@ def increased(hash)
 end
 
 increased(students)
+
 students2 = students.dup
 students2.delete_if {|k, v| k == :cohort2}
 

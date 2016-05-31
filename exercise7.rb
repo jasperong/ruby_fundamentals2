@@ -10,11 +10,11 @@ def list_students(list)
   end
 end
 
-puts list_students(students)
+list_students(students)
 
 students[:cohort4] = 43
 
-puts list_students(students)
+list_students(students)
 
 def increased(hash)
   hash.each do |key, value|
@@ -23,3 +23,7 @@ def increased(hash)
 end
 
 increased(students)
+
+students.delete_if {|k, v| k == :cohort2}
+
+list_students(students)

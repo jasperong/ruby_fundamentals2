@@ -16,6 +16,8 @@ students[:cohort4] = 43
 
 list_students(students)
 
+puts students.keys
+
 def increased(hash)
   hash.each do |key, value|
     puts "#{key}: #{(value * 1.05).to_i}"

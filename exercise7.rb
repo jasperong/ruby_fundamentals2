@@ -5,9 +5,7 @@ students = {
 }
 
 def list_students(list)
-  list.each do |key, value|
-    puts "#{key}: #{value}"
-  end
+  list.each {|key, value| puts "#{key}: #{value}"}
 end
 
 list_students(students)
@@ -19,9 +17,7 @@ list_students(students)
 puts students.keys
 
 def increased(hash)
-  hash.each do |key, value|
-    puts "#{key}: #{(value * 1.05).to_i}"
-  end
+  hash.each {|key, value| puts "#{key}: #{(value * 1.05).to_i}"}
 end
 
 increased(students)
